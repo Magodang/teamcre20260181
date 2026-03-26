@@ -1,0 +1,20 @@
+#include <stdio.h>
+//양수인지 음수인지 판별해주는 프로그램 1
+int main() {
+    int num;
+
+    printf("숫자를 입력하세요: ");
+    scanf_s("%d", &num);//입력 받기
+
+    if (num > 0) {
+        printf("양수입니다.\n");
+    }
+    else if (num < 0) {
+        printf("음수입니다.\n");
+    }
+    else {//아무 조건 해당 안될때
+        printf("0.입니다.\n");
+    }
+
+    return 0;
+}

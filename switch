@@ -1,0 +1,24 @@
+#include <stdio.h>
+//숫자에 따라 월~일로 바꿔서 풀력해주는 프로그램
+int main() {
+    int day;
+    printf("숫자를 입력하세요 (1~7): ");
+    scanf_s("%d", &day);
+
+    switch (day) {//day 값에 따라 ㄴ쟛초
+    case 1://day가 1일때
+        printf("월요일\n");
+        break;
+    
+    case 2:
+        printf("화요일\n");
+        break;
+    
+    //이하 생략
+    
+    default://아무거도 해당 안될때
+        printf("잘못된 입력입니다.\n");
+    }
+
+    return 0;
+}

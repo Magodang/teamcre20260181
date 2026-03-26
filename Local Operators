@@ -1,0 +1,21 @@
+#include <stdio.h>
+//부정행위가 있으면 무조건 불합격을 주는 프로그램
+int main() {
+
+    int average = 75;//평균
+    int absence = 2;//결석
+    bool cheating = false;//부정행위 여부.
+
+    if (((average >= 70 && absence <= 3) || average >= 90) && !cheating)//핵심 조건문.
+    {
+        printf("합격\n");
+    }
+    else
+    {
+        printf("불합격\n");
+    }
+    //70점 이상 AND 결석 2회 이하면 true
+    //OR 앞의 조건을 만족하지 않아도 90점 이상이면 true
+    //마지막 조건으로 위 두줄의 조건이 맞음 AND 부정행위 여부가 false이면 최종적으로 합격임.
+    return 0:
+}
