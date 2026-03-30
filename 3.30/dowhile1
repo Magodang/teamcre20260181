@@ -1,0 +1,16 @@
+#include <stdio.h>
+//0을 입력할때까지 반복하는 프로그램1 (do while)
+int main() {
+
+	int num = 0;
+
+	do
+	{
+		printf("숫자를 입력하세요 (0 입력시 종료): ");
+		scanf_s("%d", &num);
+	} while (num != 0);
+
+	printf("프로그램 종료\n");
+
+	return 0;
+}
